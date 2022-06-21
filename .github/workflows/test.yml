@@ -1,0 +1,13 @@
+name: 'test'
+
+on:
+  push:
+    branches:
+      - 'main'
+ jobs:
+   test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+    - id: test
+      uses: bharathkkb/test-comp@main
